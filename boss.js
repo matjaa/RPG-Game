@@ -25,7 +25,7 @@ for(var i = 0; i < bossAnimationURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = bossAnimationURLs[i];
 
-    if (img.complete) onloadHandler();
+    if (img.complete) onloadHandler().bind(img);
 }
 
 function createBoss(){

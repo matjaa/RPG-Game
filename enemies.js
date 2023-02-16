@@ -28,6 +28,7 @@ for(var i = 0; i < enemyAnimationURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = enemyAnimationURLs[i];
 
+    console.log(img)
     if(img.complete && img != undefined){
         onloadHandler().bind(img);  
     }

@@ -26,7 +26,7 @@ for(var i = 0; i < bossAnimationURLs.length; i++) {
     img.src = bossAnimationURLs[i];
 
     if(img.complete){
-        onloadHandler() 
+        onloadHandler().bind(img)
     }
 }
 

@@ -56,7 +56,7 @@ for(var i = 0; i < imageURLs.length; i++) {
     img.src = imageURLs[i];
     
     if(img.complete){
-        onloadHandler()  
+        onloadHandler().bind(img)
     }
 }
 

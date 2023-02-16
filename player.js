@@ -39,7 +39,7 @@ for(var i = 0; i < playerAnimationURLs.length; i++) {
     img.src = playerAnimationURLs[i];
     
     if(img.complete){
-        onloadHandler() 
+        onloadHandler().bind(img)
     }
 }
 

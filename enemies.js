@@ -28,7 +28,7 @@ for(var i = 0; i < enemyAnimationURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = enemyAnimationURLs[i];
 
-    if (img.complete) onloadHandler().bind(img);
+    if (img.complete) onloadHandler();
 }
 
 function createEnemy(x,y){

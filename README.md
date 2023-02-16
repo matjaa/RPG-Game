@@ -1,1 +1,1 @@
-# RPG-Game
+# Javascript web game

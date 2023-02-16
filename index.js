@@ -55,7 +55,9 @@ for(var i = 0; i < imageURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = imageURLs[i];
     
-    if (img.complete) onloadHandler().bind(img);
+    if(img.complete && img != undefined){
+        onloadHandler().bind(img);  
+    }
 }
 
 var foreground = null;

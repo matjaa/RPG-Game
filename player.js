@@ -38,7 +38,9 @@ for(var i = 0; i < playerAnimationURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = playerAnimationURLs[i];
     
-    if (img.complete) onloadHandler().bind(img);
+    if(img.complete && img != undefined){
+        onloadHandler().bind(img);  
+    }
 }
 
 var player = null;

@@ -25,8 +25,8 @@ for(var i = 0; i < bossAnimationURLs.length; i++) {
     img.onload = onloadHandler;
     img.src = bossAnimationURLs[i];
 
-    if(img.complete && img != undefined){
-        onloadHandler().bind(img);  
+    if(img.complete){
+        onloadHandler() 
     }
 }
 

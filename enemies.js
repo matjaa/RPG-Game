@@ -29,10 +29,7 @@ for(var i = 0; i < enemyAnimationURLs.length; i++) {
     img.src = enemyAnimationURLs[i];
 
     if(img.complete){
-        window.onload = () => {
-            console.log(img)
-            onloadHandler().bind(img);    
-        }
+        onloadHandler();    
     }
 }
 

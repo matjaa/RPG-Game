@@ -206,7 +206,4 @@ function startAnimating(fps, sampleFreq) {
     animate();
 }
 
-window.onload = () => {
-    startAnimating(fps,period)
-    restartGame()
-}
+startAnimating(fps,period)

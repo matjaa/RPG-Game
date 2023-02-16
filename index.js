@@ -132,6 +132,7 @@ function animate(){
     var elapsed = now - lastDrawTime;
     if (everyoneReady())
     {
+        console.log(player)
         offSet.X = (canvas.width - player.size.width) / 2 - player.position.x;
         offSet.Y = (canvas.height - player.size.height) / 2 - player.position.y;
         //console.log(offSet.X, offSet.Y)
